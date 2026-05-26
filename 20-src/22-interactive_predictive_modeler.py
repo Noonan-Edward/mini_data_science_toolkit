@@ -5,6 +5,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
 
 # Introductory Output
 print("\n")
@@ -196,12 +198,21 @@ y = df1[y_column]
 numeric_feats = df1.select_dtypes(include='number').columns.tolist()
 if y_column in numeric_feats:
     numeric_feats.remove(y_column)
+numeric_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='median')),
+    ('scaler', StandardScaler())
+])
+
 categorical_feats = df1.select_dtypes(include=['object', 'category', 'string']).columns.tolist()
+categorical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='most_frequent')),
+    ('encoder', OneHotEncoder(handle_unknown='ignore'))
+])
 
 preprocess = ColumnTransformer(
     transformers = [
-        ("categories", OneHotEncoder(drop = "first"), categorical_feats),
-        ("numeric", "passthrough", numeric_feats)
+        ("categories", categorical_transformer, categorical_feats),
+        ("numeric", numeric_transformer, numeric_feats)
     ]
 )
 
