@@ -52,6 +52,52 @@ requirements.txt
 
 ## Challenges/Difficulties
 
+Cleaning Automation Tool
+- Deciding on order of operations
+- Defining string normalization (using unicodedata and re)
+- Organizing thoughts & plans
+
+Interactive Predictive Modeler
+- Handling NaN logic
+- Building and mapping the encoder's logic
+- Constant troubleshooting (almost guess-and-check at times)
+- Building an X-column(s) system that allows for as many or as little X-columns as the user would like
+
 ## How to Replicate/Run this Project/Toolkit
 
+To run/replicate this project:
+- Clone the repository
+- Install libraries and modules in `requirements.txt`
+- Get data:
+  - Either: Take raw example data from `10-example_data/11-raw/`
+  - Or: Download your own dataset you'd like to make predictions on (non-numeric outcomes unless boolean)
+
+- Prepare/download the automated cleaner from `20-src/21-automated_cleaning_tool.py`
+  - Either: Double-click the `21-automated_cleaning_tool.py` in system files to run in terminal
+  - Or: Open `21-automated_cleaning_tool.py` in Python IDLE or another environment and "Run" in a shell via F5
+- Follow it's instructions to clean your file (make sure to remove quotations from the raw/clean file paths
+- Prepare/download the predictive modeler from `20-src/22-interactive_predictive_modeler.py`
+  - Either: Double-click the `22-interactive_predictive_modeler.py` in system files to run in terminal
+  - Or: Open `22-interactive_predictive_modeler.py` in Python IDLE or another environment and "Run" in a shell via F5
+
+- Follow it's instructions to build your model.
+  - Know your y-column (what's being predicted)
+  - Know your X-columns (what you might use to predict the y-column)
+
+- (If using Titanic example dataset) Consider viewing sample outputs in `40-example_outputs/`
+- Consider viewing notebook walkthroughs in `30-example_notebooks/`
+- Enjoy the engine.
+
+## Future Improvements:
+
+- Condensed predictive modeler logic
+- Options for numeric predictions (estimated values)
+- Better cancel/continue logic
+- Better explanations for transparency
+
 ## The Author
+
+### Edward Noonan
+Data Analyst with grounding experience in SQL, Python, R/RStudio, BI tools (PowerBI & Tableau), and overall analytics workflows.
+
+This project was developed and polished as part of a post-graduation portfolio to demonstrate real-world data analysis (and engineering) capabilities.
