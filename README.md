@@ -90,6 +90,11 @@ To run/replicate this project:
 - Consider viewing notebook walkthroughs in `30-example_notebooks/`
 - Enjoy the engine.
 
+OR, if you're solely interested in the Predictive Modeler:
+- Download the clean data from `10-example_data/12-clean/`
+- Open/Run the `22-interactive_predictive_modeler.py`
+- Follow its instructions to build your model
+
 ## Future Improvements:
 
 - Condensed predictive modeler logic
