@@ -17,13 +17,15 @@ I thought publishing this work to GitHub as part of my professional project port
 ### Python
 Pandas 
 
-Numpy (Numerical Python)
+Numpy
 
 Sklearn (Scikit Learn)
 - Linear Model -> LogisticRegression
-- Preprocessing -> OneHotEncoder
+- Preprocessing -> OneHotEncoder & StandardScaler
 - Compose -> ColumnTransformer
 - Pipeline -> Pipeline
+- Impute -> SimpleImputer
+
 ## Cleaning Automation Tool
 The Cleaning Automation Tool can be ran from `20-src/21-automated_cleaning_tool.py`, or viewed as a snapshot with an example in `30-example_notebooks/31-cleaning_tool.ipynb`. The tool first asks the end user to provide the path to their raw dataset (remove the quotes), then asks that the user provide a path to where they'd like to save their clean dataset (remove the quotes). Afterwards, a cleaning configuration prompt will have the user enter whether they'd like to normalize any columns, parse any date columns, convert any columns to numeric, drop any columns, rename any columns, etc. The user gets free reign over which columns to enter where. When this is said and done, the script will apply the `basic_clean`, which will kill leading/trailing whitespace, set everything to lower case, and do as was requested of it in the cleaning configuration. After the `basic_clean` is finished, it will save the new CSV right to the clean path's destination on the user's machine.
 
