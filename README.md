@@ -73,15 +73,9 @@ To run/replicate this project:
 - Get data:
   - Either: Take raw example data from `10-example_data/11-raw/`
   - Or: Download your own dataset you'd like to make predictions on (non-numeric outcomes unless boolean)
-
-- Prepare/download the automated cleaner from `20-src/21-automated_cleaning_tool.py`
-  - Either: Double-click the `21-automated_cleaning_tool.py` in system files to run in terminal
-  - Or: Open `21-automated_cleaning_tool.py` in Python IDLE or another environment and "Run" in a shell via F5
+- Open `21-automated_cleaning_tool.py` in Python IDLE or another environment and "Run" in a shell via F5
 - Follow it's instructions to clean your file (make sure to remove quotations from the raw/clean file paths
-- Prepare/download the predictive modeler from `20-src/22-interactive_predictive_modeler.py`
-  - Either: Double-click the `22-interactive_predictive_modeler.py` in system files to run in terminal
-  - Or: Open `22-interactive_predictive_modeler.py` in Python IDLE or another environment and "Run" in a shell via F5
-
+- Open `22-interactive_predictive_modeler.py` in Python IDLE or another environment and "Run" in a shell via F5
 - Follow it's instructions to build your model.
   - Know your y-column (what's being predicted)
   - Know your X-columns (what you might use to predict the y-column)
