@@ -1,4 +1,4 @@
-# P2: Mini Data Science Toolkit (Incomplete)
+# P2: Mini Data Science Toolkit
 ## Overview
 Project 2 (P2: Mini Data Science Toolkit) serves as a data analyst's/scientist's suite for simple datatable cleaning and predictive modeling. While far from robust, the toolkit puts on display grounding Python data-science experience with feature engineering and machine learning at its forefront. The project's workflow includes:
 - An automated Python datatable cleansing script that allows for the end user to pull the strings on what happens where
