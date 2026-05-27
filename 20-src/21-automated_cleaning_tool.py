@@ -33,7 +33,7 @@ a_flag = True
 while a_flag == True:
     a_input = input("Enter the name of a date column you would like to parse: ")
     a.append(a_input)
-    a_continue = input("Continue? Y/N: ")
+    a_continue = input("Another? Y/N: ")
     if a_continue == "N":
         a_flag = False
 
@@ -42,7 +42,7 @@ b_flag = True
 while b_flag == True:
     b_input = input("Enter the name of a numeric column you would like to configure: ")
     b.append(b_input)
-    b_continue = input("Continue? Y/N: ")
+    b_continue = input("Another? Y/N: ")
     if b_continue == "N":
         b_flag = False
 
@@ -51,7 +51,7 @@ c_flag = True
 while c_flag == True:
     c_input = input("Enter the name of a column you would prefer to drop: ")
     c.append(c_input)
-    c_continue = input("Continue? Y/N: ")
+    c_continue = input("Another? Y/N: ")
     if c_continue == "N":
         c_flag = False
 
@@ -61,7 +61,7 @@ while d_flag == True:
     key_input = input("If there is a column you'd like to rename, provide said column's current name: ")
     value_input = input("Provide the name you'd prefer the column to have: ")
     d[key_input] = value_input
-    d_continue = input("Continue? Y/N: ")
+    d_continue = input("Another? Y/N: ")
     if d_continue == "N":
         d_flag = False
 
@@ -70,7 +70,7 @@ f_flag = True
 while f_flag == True:
     f_input = input("If there is a column you'd like to normalize entirely, provide such a column's name here: ")
     f.append(f_input)
-    f_continue = input("Continue? Y/N: ")
+    f_continue = input("Another? Y/N: ")
     if f_continue == "N":
         f_flag = False
 
